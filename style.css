@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+html {
+	font-family: 'Nunito';
+	font-size: 12px;
+	font-weight: 600;
+}
+
+section {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 100px 0;
+	background-color: #081b33;
+}
+
+.container {
+	width: 99%;
+	height: auto;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.brand {
+	text-align: center;
+	font-size: 4em;
+	color: whitesmoke;
+	margin-bottom: 30px;
+}
+form {
+	width: 100%;
+	max-width: 400px;
+	margin: 20px auto;
+	background-color: #e4e3e3;
+	border-radius: 4px;
+}
+
+form input {
+	width: 90%;
+	background-color: transparent;
+	padding: 10px;
+	border: none;
+	outline: none;
+	font-size: 2em;
+	display: inline-block;
+}
+
+form ion-icon {
+	width: 9%;
+	font-size: 3em;
+	margin: -9px;
+	color: #5e5e5e;
+}
+
+.search_result {
+	margin-top: 50px;
+	width: 100%;
+	display: grid;
+	gap: 25px;
+	grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item {
+	width: 100%;
+	border-radius: 8px;
+	background-color: #767d92;
+	padding: 15px;
+	overflow: hidden;
+}
+
+.item img {
+	width: 100%;
+	height: 300px;
+	border-radius: 4px;
+}
+
+.item .flex_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.item .title {
+	color: whitesmoke;
+	margin: 20px 10px 0, 0;
+	font-size: 1.8em;
+	font-weight: 400;
+	padding: 10px 0;
+	flex: 2;
+}
+.item .view_button {
+	text-decoration: none;
+	text-align: center;
+	width: 130px;
+	flex: 1;
+	padding: 10px 0;
+	color: white;
+	background-color: #a4a9b8;
+	font-size: 1.4em;
+	margin-top: 20px;
+	align-self: start;
+}
+.item_data {
+	color: whitesmoke;
+	display: block;
+	margin-top: 10px;
+	font-size: 1.4em;
+	letter-spacing: 0.05em;
+}
+
+.item_data:last-child {
+	font-size: 1em;
+}
